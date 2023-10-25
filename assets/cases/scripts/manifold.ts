@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, ToggleComponent, PhysicsSystem2D } from 'cc';
+import { _decorator, Component, Node, Toggle, PhysicsSystem2D } from 'cc';
 const { ccclass } = _decorator;
 
 @ccclass('Manifold')
@@ -10,7 +10,7 @@ export class Manifold extends Component {
         this.toggleNode.on('toggle', this.callback, this);
     }
 
-    callback (toggle: ToggleComponent) {
+    callback (toggle: Toggle) {
         PhysicsSystem2D.instance.enable = toggle.isChecked;
     }
 }
