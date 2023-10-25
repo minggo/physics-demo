@@ -1850,7 +1850,7 @@
     "_id": "7e3e9xYtFKxrNEE/f4ujy4"
   },
   {
-    "__type__": "61481OhIVNCbrtHCdwHCQlx",
+    "__type__": "2ae54Gn8H5GXqIwkR8pfwGw",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -1859,7 +1859,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_id": "97E0gWBvJEYaDwKBVUDzGS"
+    "toggle": {
+      "__id__": 115
+    },
+    "_id": "4bYRF+uGJLS7S1T0gFOBux"
   },
   {
     "__type__": "cc.PrefabInfo",
