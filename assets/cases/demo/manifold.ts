@@ -1,19 +1,11 @@
-import { _decorator, Component, Node, tween, Sprite, Color, instantiate, Collider2D, Contact2DType, Toggle, ToggleComponent, PhysicsSystem2D } from 'cc';
-const { ccclass, property, type } = _decorator;
+import { _decorator, Component, Node, ToggleComponent, PhysicsSystem2D } from 'cc';
+const { ccclass } = _decorator;
 
 @ccclass('Manifold')
 export class Manifold extends Component {
-    // @type(Node)
-    // pointTemp: Node = null;
     toggleNode: Node = null;
 
     start () {
-        // Your initialization goes here.
-        // let collider = this.getComponent(Collider2D);
-        // if (collider) {
-            // collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-        // }
-
         this.toggleNode = this.node.getChildByName('Toggle');
         this.toggleNode.on('toggle', this.callback, this);
     }
@@ -21,33 +13,4 @@ export class Manifold extends Component {
     callback (toggle: ToggleComponent) {
         PhysicsSystem2D.instance.enable = toggle.isChecked;
     }
-
-    // update (deltaTime: number) {
-    //     // Your update function goes here.
-    // }
-
-    // onBeginContact (selfCollider, otherCollider, contact: any) {
-    //     let worldManifold = contact.getWorldManifold();
-    //     let points = worldManifold.points;
- 
-    //     for (let i = 0; i < points.length; i++) {
-    //         let p = points[i];
-            
-    //         let node = instantiate(this.pointTemp);
-    //         node.active = true;
- 
-    //         let sprite = node.getComponent(Sprite);
-    //         let newColor = new Color(sprite.color);
-    //         newColor.a = 0;
-    //         tween(sprite)
-    //             .to(0.5, { color: newColor} )
-    //             .call(() => {
-    //                 node.parent = null;
-    //             })
-    //             .start();
- 
-    //         node.parent = this.node.parent;
-    //         node.setWorldPosition(p.x, p.y, 0);
-    //     }
-    // }
 }
