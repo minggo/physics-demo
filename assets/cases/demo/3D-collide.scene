@@ -679,7 +679,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 585.974025974026,
+    "_orthoHeight": 475.78536585365856,
     "_near": 1,
     "_far": 2000,
     "_color": {
@@ -1056,8 +1056,8 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 119.98752029220779,
-      "height": 50.400000000000006
+      "width": 120,
+      "height": 50.4
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1089,7 +1089,7 @@
     "_string": "开启物理效果",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 24.0625,
+    "_actualFontSize": 20,
     "_fontSize": 20,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -1556,7 +1556,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 585.974025974026,
+    "_orthoHeight": 475.78536585365856,
     "_near": 1,
     "_far": 2000,
     "_color": {
